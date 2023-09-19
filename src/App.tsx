@@ -1,9 +1,9 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/pages/Home";
-import MainUml from "./components/pages/MainUml";
-import MainMerise from "./components/pages/MainMerise";
+import Home from "./components/Home";
+import MainUml from "./components/MainUml";
+import MainMerise from "./components/MainMerise";
 
 function App() {
   return (

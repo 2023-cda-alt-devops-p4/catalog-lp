@@ -1,8 +1,6 @@
 import { Component } from "react";
-import { MenuData } from "./data/MenuData";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
-import MenuIcon from "./assets/images/menu-icon.png";
 import "./css/NavBarStyle.css";
 
 class NavBar extends Component {
@@ -10,7 +8,7 @@ class NavBar extends Component {
     return (
       <nav className="NavbarItems">
         <Link to="/">
-          <img src={Logo} alt="logo" style={{ width: 160 }} />
+          <img src={Logo} alt="logo" style={{ width: "100%" }} />
         </Link>
         <Link to="/uml">UML</Link>
         <Link to="/merise">Merise</Link>
@@ -18,4 +16,5 @@ class NavBar extends Component {
     );
   }
 }
+
 export default NavBar;

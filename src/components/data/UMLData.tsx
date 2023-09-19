@@ -9,7 +9,7 @@ export const UMLData = [
       "Il représente la structure statique d'un système en montrant les classes, les attributs, les méthodes et les relations entre les classes.",
   },
   {
-    title: "Diagramme d'Objet'",
+    title: "Diagramme d'Objet",
     url: "#",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/1/17/Object_diagram.png",
