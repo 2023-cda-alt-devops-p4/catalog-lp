@@ -6,4 +6,18 @@
 .nav-menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu li{
+    margin: 0 20px;
+    font-size: 1.6em;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+.nav-menu li:hover{
+    transform: scale(1.2);
+}
+.nav-menu a{
+    color: #000;
 }
