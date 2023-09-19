@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { UMLData } from "./data/UMLData";
+import { UMLData } from "../data/UMLData";
 
 class MainUml extends Component {
   render() {

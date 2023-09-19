@@ -20,7 +20,8 @@ export const UMLData = [
   {
     title: "Diagramme de Composants",
     url: "#",
-    image: "",
+    image:
+      "https://images.ctfassets.net/qop92tnevinq/01zVm12liyJndJ1ke4PjAZ/c05ad9418d20fd1c1e52465b03646c52/Component_diagram-web.png",
     categorie: "diagramme de structure",
     description:
       "Modélise la structure des composants logiciels et leurs dépendances.",
@@ -28,7 +29,8 @@ export const UMLData = [
   {
     title: "Diagramme de Package",
     url: "#",
-    image: "",
+    image:
+      "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/discovery-2020/feature-images/package-diagram-UML-feature-image-2020@2x.png",
     categorie: "diagramme de structure",
     description:
       "Représente la structure de paquetage d'un modèle UML, montrant comment les éléments sont organisés en groupes logiques.",
@@ -36,7 +38,7 @@ export const UMLData = [
   {
     title: "Diagramme de Déploiement",
     url: "#",
-    image: "",
+    image: "https://www.edrawsoft.com/template/deployment-chart.png",
     categorie: "diagramme de structure",
     description:
       "Montre la disposition physique des composants logiciels et matériels d'un système, en indiquant comment ils sont déployés sur des nœuds physiques.",
