@@ -25,6 +25,17 @@
 
 .UmlMain {
     display: flex;
+    flex-direction: column;
+}
+.UmlMain input{
+    padding: 10px 10px ;
+    width: 200px;
+    align-self: flex-end;
+    border-radius: 10px;
+    border: 0.5px solid #595959;
+}
+.UmlMain .umlContain{
+    display: flex;
 }
 .UmlMain .blockDiag{
     width: 50%;
@@ -34,6 +45,7 @@
 .blockDiag h3{
     color: #2065B5;
     margin: 10px 0;
+    font-size: 1.8em;
 }
 .blockDiag .items{
     display: flex;

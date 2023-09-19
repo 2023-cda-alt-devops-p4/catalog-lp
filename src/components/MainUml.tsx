@@ -1,39 +1,61 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 import { UMLData } from "./data/UMLData";
 import "./css/UmlStyle.css";
 
-class MainUml extends Component {
-  render() {
-    const diagrammesStructure = UMLData.filter(
-      (item) => item.categorie === "diagramme de structure"
-    );
-    const diagrammesComportement = UMLData.filter(
-      (item) => item.categorie === "diagramme de comportement"
-    );
-    return (
-      <div className="UmlMain">
+function MainUml() {
+  const [search, setSearch] = useState("");
+
+  const diagrammesStructure = UMLData.filter(
+    (item) => item.categorie === "diagramme de structure"
+  );
+
+  const diagrammesComportement = UMLData.filter(
+    (item) => item.categorie === "diagramme de comportement"
+  );
+
+  return (
+    <div className="UmlMain">
+      <input
+        type="text"
+        placeholder="Rechercher par titre..."
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <div className="umlContain">
         <div className="blockDiag">
           <h3>Diagrame de Structure</h3>
           <div className="items">
-            {diagrammesStructure.map((item, index) => (
-              <a key={index} href={`#${item.title} || `}>
-                {item.title}
-              </a>
-            ))}
+            {diagrammesStructure
+              .filter((item) => {
+                return search.toLowerCase() === ""
+                  ? item
+                  : item.title.toLowerCase().includes(search);
+              })
+              .map((item, index) => (
+                <a key={index} href={`#${item.title} || `}>
+                  {item.title}
+                </a>
+              ))}
           </div>
         </div>
         <div className="blockDiag">
           <h3>Diagrame de Comportement</h3>
           <div className="items">
-            {diagrammesComportement.map((item, index) => (
-              <a key={index} href={`#${item.title} || `}>
-                {item.title}
-              </a>
-            ))}
+            {diagrammesComportement
+              .filter((item) => {
+                return search.toLowerCase() === ""
+                  ? item
+                  : item.title.toLowerCase().includes(search);
+              })
+              .map((item, index) => (
+                <a key={index} href={`#${item.title} || `}>
+                  {item.title}
+                </a>
+              ))}
           </div>
         </div>
+      </div>
 
-        {/* <ul>
+      {/* <ul>
           {UMLData.map((item, index) => {
             return (
               <li className="umlItems">
@@ -47,9 +69,8 @@ class MainUml extends Component {
             );
           })}
         </ul> */}
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default MainUml;
