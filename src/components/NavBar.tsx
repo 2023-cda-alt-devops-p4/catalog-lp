@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { MenuData } from "./MenuData";
+import { MenuData } from "./data/MenuData";
 import Logo from "../assets/images/logo.png";
 import MenuIcon from "./assets/images/menu-icon.png";
 import "./css/NavBarStyle.css";

@@ -2,7 +2,8 @@ export const UMLData = [
   {
     title: "Diagramme de Classe",
     url: "#",
-    image: "",
+    image:
+      "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/class-diagram-for-hotel-management-system-UML/UML_class_diagram_hotel-949x683.PNG",
     categorie: "diagramme de structure",
     description:
       "Il représente la structure statique d'un système en montrant les classes, les attributs, les méthodes et les relations entre les classes.",
@@ -10,7 +11,8 @@ export const UMLData = [
   {
     title: "Diagramme d'Objet'",
     url: "#",
-    image: "",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Object_diagram.png",
     categorie: "diagramme de structure",
     description:
       "Montre une instance spécifique d'une classe et ses relations avec d'autres objets à un moment donné.",

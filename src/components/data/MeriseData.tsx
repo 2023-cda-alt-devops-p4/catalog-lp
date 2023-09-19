@@ -51,21 +51,21 @@ export const MeriseData = [
   {
     title: "ASI",
     url: "#",
-    categorie: "schemas de flux",
+    categorie: "schemas d'architecture",
     description:
       "Diagramme d'Architecture des Systèmes d'Information montre la structure générale du système d'information, y compris les composants matériels et logiciels.",
   },
   {
     title: "AFC",
     url: "#",
-    categorie: "schemas de flux",
+    categorie: "schemas d'architecture",
     description:
       "Diagramme de Flux d'Architecture identifie les flux d'information à travers le système.",
   },
   {
     title: "AO",
     url: "#",
-    categorie: "schemas de flux",
+    categorie: "schemas d'architecture",
     description:
       "Diagramme d'Architecture des Organisations décrit la structure organisationnelle de l'entreprise et les rôles des différents acteurs.",
   },
