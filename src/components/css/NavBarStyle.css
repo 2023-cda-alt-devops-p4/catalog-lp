@@ -1,0 +1,9 @@
+.NavbarItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,12 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-
-const MenuData = () => {
-  return (
-    <View>
-      <Text>MenuData</Text>
-    </View>
-  )
-}
-
-export default MenuData
+export const MenuData = [
+    {
+        title: 'Home',
+        url: '#',
+        cName: 'nav-liinks'
+    },
+    {
+        title: 'UML',
+        url: '#',
+        cName: 'nav-liinks'
+    },
+    {
+        title: 'Merise',
+        url: '#',
+        cName: 'nav-liinks'
+    },
+]

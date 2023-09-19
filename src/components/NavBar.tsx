@@ -1,19 +1,26 @@
-import { View, Text, Image } from 'react-native'
-import React from 'react'
-import logo from '../src/assets/images/logo.png'
-import {FaBars, FaTimes} from 'react-icons/fa'
-import { useRef } from 'react'
+import { Component } from "react";
+import Logo from '../assets/images/logo.png'
+import { MenuData } from "./MenuData";
+import "./css/NavBarStyle.css"
 
-
-const NavBar = () => {
-    const navRef = useRef();
-
-    
-
-  return (
-    <header>
-    </header>
-  )
+class NavBar extends Component {
+    render(){
+        return (
+        <nav className="NavbarItems">
+            <img src={Logo} alt="logo" style={{width: 160}}/>
+            <ul className="nav-menu">
+                <li>
+                    {MenuData.map((item, index) => {
+                        return(
+                            <li>
+                                <a href={item.url} className={item.cName}>{item.title}</a>
+                            </li>
+                        )
+                    } )}
+                </li>
+            </ul>
+        </nav>
+        )
+    }
 }
-
-export default NavBar
+export default NavBar;
