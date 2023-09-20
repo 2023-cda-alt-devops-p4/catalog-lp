@@ -24,8 +24,8 @@ const Modal: React.FC<ModalProps> = ({
         <h2>{title}</h2>
         <img src={imageUrl} alt="" />
         <p>{description}</p>
-        <button onClick={onClose}>Fermer</button>
       </div>
+      <button onClick={onClose}>Fermer</button>
     </div>
   );
 };
