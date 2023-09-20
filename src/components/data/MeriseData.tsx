@@ -1,7 +1,7 @@
 export const MeriseData = [
   {
     id: 1,
-    title: "MCD",
+    title: "Modèle Conceptuel de Données (MCD)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
@@ -9,7 +9,7 @@ export const MeriseData = [
   },
   {
     id: 2,
-    title: "MCT",
+    title: "Modèle Conceptuel de Traitement (MCT)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
@@ -17,7 +17,7 @@ export const MeriseData = [
   },
   {
     id: 3,
-    title: "MCC",
+    title: "Modèle Conceptuel de Communication (MCC)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
@@ -25,7 +25,7 @@ export const MeriseData = [
   },
   {
     id: 4,
-    title: "MOD",
+    title: "Modèle Organisationnel de Données (MOD)",
     url: "#",
     categorie: "schemas organisationels",
     description:
@@ -33,7 +33,7 @@ export const MeriseData = [
   },
   {
     id: 5,
-    title: "MOT",
+    title: "Modèle Organisationnel de Traitement (MOT)",
     url: "#",
     categorie: "schemas organisationels",
     description:
@@ -41,7 +41,7 @@ export const MeriseData = [
   },
   {
     id: 6,
-    title: "DFD",
+    title: "Diagramme de Flux de Données (DFD)",
     url: "#",
     categorie: "schemas de flux",
     description:
@@ -49,7 +49,7 @@ export const MeriseData = [
   },
   {
     id: 7,
-    title: "CFD",
+    title: "Diagramme de Flux de Contrôle (CFD)",
     url: "#",
     categorie: "schemas de flux",
     description:
@@ -57,7 +57,7 @@ export const MeriseData = [
   },
   {
     id: 8,
-    title: "ASI",
+    title: "Diagramme d'Architecture des Systèmes d'Information (ASI)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
@@ -65,7 +65,7 @@ export const MeriseData = [
   },
   {
     id: 9,
-    title: "AFC",
+    title: "Diagramme de Flux d'Architecture (AFC)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
@@ -73,7 +73,7 @@ export const MeriseData = [
   },
   {
     id: 10,
-    title: "AO",
+    title: "Diagramme d'Architecture des Organisations (AO)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
