@@ -56,9 +56,19 @@
     width: 400px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 0 20px;
+    background-color: #3392ff1d;
 }
 .umlCard h4{
     font-size: 1.6em;
     margin: 20px;
     color: #3392ff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.umlCard p{
+    font-size: 0.8em;
+    text-align: justify;
+}
+.umlCard .plusInfos{
+    margin: 20px 0;
+    display: flex;
 }
