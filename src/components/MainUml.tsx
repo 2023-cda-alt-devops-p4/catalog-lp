@@ -34,6 +34,33 @@ function MainUml() {
     setIsModalOpen(false);
   };
 
+  const allUmlItems = UMLData.map((item, index) => (
+    <div className="umlCard" key={index}>
+      <div className="umlItems">
+        <h4>{item.title}</h4>
+        <p>{item.description}</p>
+        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+          Voir un exemple
+        </button>
+      </div>
+      <a href={item.url}></a>
+    </div>
+  ));
+  const selectedUmlItems = UMLData.filter((item) =>
+    selectedItemTitles.includes(item.title)
+  ).map((item, index) => (
+    <div className="umlCard" key={index}>
+      <div className="umlItems">
+        <h4>{item.title}</h4>
+        <p>{item.description}</p>
+        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+          Voir un exemple
+        </button>
+      </div>
+      <a href={item.url}></a>
+    </div>
+  ));
+
   return (
     <div className="UmlMain">
       <input
@@ -92,24 +119,9 @@ function MainUml() {
       </div>
 
       <div className="umlContain">
-        {UMLData.filter((item) => selectedItemTitles.includes(item.title)).map(
-          (item, index) => (
-            <div className="umlCard" key={index}>
-              <div className="umlItems">
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
-                <button
-                  className="plusInfos"
-                  onClick={() => handleModalOpen(item)}
-                >
-                  Voir un exemple
-                </button>
-              </div>
-              <a href={item.url}></a>
-            </div>
-          )
-        )}
+        {selectedItemTitles.length > 0 ? selectedUmlItems : allUmlItems}
       </div>
+
       <Modal
         isOpen={isModalOpen}
         onClose={handleModalClose}
