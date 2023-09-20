@@ -17,12 +17,13 @@ function MainUml() {
     <div className="UmlMain">
       <input
         type="text"
-        placeholder="Rechercher par titre..."
+        placeholder="Recherche"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div className="umlContain">
+
+      <div className="umlSearch">
         <div className="blockDiag">
-          <h3>Diagrame de Structure</h3>
+          <h3>Diagramme de Structure</h3>
           <div className="items">
             {diagrammesStructure
               .filter((item) => {
@@ -38,7 +39,7 @@ function MainUml() {
           </div>
         </div>
         <div className="blockDiag">
-          <h3>Diagrame de Comportement</h3>
+          <h3>Diagramme de Comportement</h3>
           <div className="items">
             {diagrammesComportement
               .filter((item) => {
@@ -55,20 +56,20 @@ function MainUml() {
         </div>
       </div>
 
-      {/* <ul>
-          {UMLData.map((item, index) => {
-            return (
-              <li className="umlItems">
-                <h1>{item.title}</h1>
-                <div className="bloc-img-desc">
-                  <img src={item.image} alt="" />
-                  <p>{item.description}</p>
-                </div>
-                <a href={item.url}></a>
-              </li>
-            );
-          })}
-        </ul> */}
+      <div className="umlContain">
+        {UMLData.map((item, index) => {
+          return (
+            <div className="umlCard">
+              <div className="umlItems">
+                <h4>{item.title}</h4>
+                {/* <img src={item.image} alt="" /> */}
+                <p>{item.description}</p>
+              </div>
+              <a href={item.url}></a>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
