@@ -47,7 +47,6 @@
 .blockDiag .items a:hover{
     transform: scale(1.1);
     background-color: #3392ffb6;
-
 }
 .umlCard{
     height: 220px;
