@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <nav className="NavbarItems">
       <Link to="/">
-        <img src={Logo} alt="logo" style={{ width: "100%" }} />
+        <img src={Logo} alt="logo" />
       </Link>
       <Link to="/uml">UML</Link>
       <Link to="/merise">Merise</Link>

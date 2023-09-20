@@ -1,69 +1,79 @@
 export const MeriseData = [
   {
-    title: "MCD",
+    id: 1,
+    title: "Modèle Conceptuel de Données (MCD)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
       "Modèle Conceptuel de Données représente les entités, leurs attributs et leurs associations dans un système d'information. ",
   },
   {
-    title: "MCT",
+    id: 2,
+    title: "Modèle Conceptuel de Traitement (MCT)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
       "Modèle Conceptuel de Traitement modélise les processus métier et les flux d'information entre eux.",
   },
   {
-    title: "MCC",
+    id: 3,
+    title: "Modèle Conceptuel de Communication (MCC)",
     url: "#",
     categorie: "schemas conceptuels",
     description:
       "Modèle Conceptuel de Communication montre les interactions entre les acteurs (utilisateurs) du système et les processus métier.",
   },
   {
-    title: "MOD",
+    id: 4,
+    title: "Modèle Organisationnel de Données (MOD)",
     url: "#",
     categorie: "schemas organisationels",
     description:
       "Modèle Organisationnel de Données spécifie la manière dont les données sont stockées et organisées dans le système, notamment les tables de bases de données et leurs relations.",
   },
   {
-    title: "MOT",
+    id: 5,
+    title: "Modèle Organisationnel de Traitement (MOT)",
     url: "#",
     categorie: "schemas organisationels",
     description:
       "Modèle Organisationnel de Traitement définit la façon dont les tâches et les activités sont organisées au sein de l'entreprise, y compris les acteurs responsables de chaque activité.",
   },
   {
-    title: "DFD",
+    id: 6,
+    title: "Diagramme de Flux de Données (DFD)",
     url: "#",
     categorie: "schemas de flux",
     description:
       "Diagramme de Flux de Données représente les flux de données entre les processus, les entités externes et les entrepôts de données.",
   },
   {
-    title: "CFD",
+    id: 7,
+    title: "Diagramme de Flux de Contrôle (CFD)",
     url: "#",
     categorie: "schemas de flux",
     description:
       "Diagramme de Flux de Contrôle détaille la séquence des étapes dans un processus ou une fonction.",
   },
   {
-    title: "ASI",
+    id: 8,
+    title: "Diagramme d'Architecture des Systèmes d'Information (ASI)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
       "Diagramme d'Architecture des Systèmes d'Information montre la structure générale du système d'information, y compris les composants matériels et logiciels.",
   },
   {
-    title: "AFC",
+    id: 9,
+    title: "Diagramme de Flux d'Architecture (AFC)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
       "Diagramme de Flux d'Architecture identifie les flux d'information à travers le système.",
   },
   {
-    title: "AO",
+    id: 10,
+    title: "Diagramme d'Architecture des Organisations (AO)",
     url: "#",
     categorie: "schemas d'architecture",
     description:
