@@ -61,13 +61,30 @@ function MainUml() {
     </div>
   ));
 
+  const removeSelectedItem = (title: string) => {
+    setSelectedItemTitles((prevTitles) =>
+      prevTitles.filter((item) => item !== title)
+    );
+  };
+  const selectedItemsList = selectedItemTitles.map((title, index) => (
+    <div key={index} className="selected-item">
+      {title}
+      <button onClick={() => removeSelectedItem(title)}>©</button>
+    </div>
+  ));
+
   return (
     <div className="UmlMain">
-      <input
-        type="text"
-        placeholder="Recherche"
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="searchContain">
+        <div className="selectedItemsContainer">
+          <p>{selectedItemsList}</p>
+        </div>
+        <input
+          type="text"
+          placeholder="Recherche"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
 
       <div className="umlSearch">
         <div className="blockDiag">
