@@ -64,7 +64,7 @@ function MainUml() {
                 <h4>{item.title}</h4>
                 {/* <img src={item.image} alt="" /> */}
                 <p>{item.description}</p>
-                <button className="plusInfos">Exemple</button>
+                <button className="plusInfos">Voir un exemple</button>
               </div>
               <a href={item.url}></a>
             </div>
