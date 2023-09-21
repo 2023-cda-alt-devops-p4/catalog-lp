@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .UmlMain {
     display: flex;
     flex-direction: column;
@@ -12,14 +15,15 @@
     align-items: flex-start;
 }
 .UmlMain input{
-    padding: 10px 10px ;
+    padding: 10px 20px ;
     align-self: flex-start;
-    border-radius: 10px;
-    border: 0.1px solid #5959593e;
-    background-color: hsla(0, 0%, 100%, 0.317);
+    border: none;
+    border-bottom: 1px solid #00771A;
+    background-color: transparent;
     margin: 20px 0;
-    width: 200px;
+    width: 100%;
     outline: none;
+    color: #00771A;
 }
 
 .UmlMain .searchContain .selectedItemsContainer {
@@ -28,15 +32,14 @@
     align-items: center;
 }
 .selected-item{
-    background-color: #ffffff81;
+    background-color: #feeaa195;
     padding: 10px;
     font-size: 0.7em;
-    border-radius: 10px;
     margin: 0 4px 6px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #572F79;
+    color: #00771A;
+    font-family: 'Chivo', sans-serif;
     font-weight: 700;
-    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +50,7 @@
     align-items: center;
     background-color: transparent;
     border: none;
-    color: #7D46AC;
+    color: #00771A;
 }
 .UmlMain .searchContain .selectedItemsContainer p{
     display: flex;
@@ -65,11 +68,13 @@
     padding: 10px;
 }
 .blockDiag h3{
-    color: #7D46AC;
+    color: #D6955B;
     font-size: 1.2em;
-    width: 30%;
+    font-weight: 900;
+    width: 100%;
     font-weight: 700;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
 }
 .blockDiag .items{
     margin-top: 20px;
@@ -80,24 +85,22 @@
 .blockDiag .items a{
     padding: 10px;
     font-size: 0.7em;
-    border-radius: 10px;
     margin: 0 10px 4px 0px;
-    background-color: #7c46acd4;
+    background-color: #00771a81;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #fff;
     font-weight: 700;
-    font-family: 'Roboto Condensed', sans-serif;
     transition: all 0.3s;
 }
 .blockDiag .items a:hover{
     transform: scale(1.1);
-    background-color: #3392ffb6;
+    background-color: #26a39b9d;
 }
 .umlContain{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    gap: 4%;
     margin: 10% 0;
 }
 .umlCard{
@@ -106,16 +109,15 @@
     flex-direction: column;
     justify-content: center;
     margin: 60px 0;
-    border-radius: 20px;
     width: 340px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 0 20px;
-    background-color: #7c46ac17;
+    background-color: #FEEAA1;
 }
 .umlCard h4{
     font-size: 1.6em;
     margin: 20px;
-    color: #fff;
+    color: #D6955B;
     font-weight: 900;
 }
 .umlCard p{
@@ -126,11 +128,10 @@
     margin: 20px 0;
     padding: 10px;
     width: 100%;
-    background-color: #7c46ac93;
-    border-radius: 5px;
+    background-color: #FFF9EA;
     border: none;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
+    color: #00771A;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     transition: all 0.4s;
