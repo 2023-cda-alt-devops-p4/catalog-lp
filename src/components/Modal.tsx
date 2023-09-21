@@ -6,17 +6,10 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  description: string;
   imageUrl: string;
 }
 
-const Modal: React.FC<ModalProps> = ({
-  isOpen,
-  onClose,
-  title,
-  description,
-  imageUrl,
-}) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageUrl }) => {
   if (!isOpen) return null;
 
   return (
@@ -29,13 +22,6 @@ const Modal: React.FC<ModalProps> = ({
           <img src={imageUrl} alt="" />
           <img src={imageUrl} alt="" />
           <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <p>{description}</p>
         </div>
       </div>
     </>

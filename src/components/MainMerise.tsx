@@ -196,7 +196,6 @@ function MainUml() {
         onClose={handleModalClose}
         title={selectedItem?.title || ""}
         imageUrl={selectedItem?.image || ""}
-        description={selectedItem?.description || ""}
       />
     </div>
   );

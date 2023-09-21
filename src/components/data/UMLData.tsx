@@ -1,10 +1,11 @@
+import uml1 from "../../assets/images/uml-1.png";
+
 export const UMLData = [
   {
     id: 1,
     title: "Diagramme de Classe",
     url: "#",
-    image:
-      "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/class-diagram-for-hotel-management-system-UML/UML_class_diagram_hotel-949x683.PNG",
+    image: uml1,
     categorie: "diagramme de structure",
     description:
       "Il représente la structure statique d'un système en montrant les classes, les attributs, les méthodes et les relations entre les classes.",

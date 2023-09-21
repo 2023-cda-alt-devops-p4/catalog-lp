@@ -21,17 +21,23 @@
     display: flex;
     align-self: flex-end;
     color: #00771A;
-    margin: 40px;
+    margin: 20px;
 }
 .modal-content{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px;
+
 }
 .modal h2 {
     font-size: 1.6em;
+    display: flex;
+    align-self: center;
+    margin: 40px 0;
 }
 .modal img{
-    width: 200px;
+    display: flex;
+    align-self: center;
+    width: 90%;
 }
