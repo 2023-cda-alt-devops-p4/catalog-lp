@@ -2,7 +2,7 @@
 .NavbarItems{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 40px;
     border-radius: 10px;
     background-color: transparent;
 }
@@ -22,5 +22,5 @@
     transform: scale(1.1);
 }
 .NavbarItems a img{
-    max-width: 100px;
+    max-width: 80px;
 }
