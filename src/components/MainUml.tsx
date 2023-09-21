@@ -79,14 +79,14 @@ function MainUml() {
   return (
     <div className="UmlMain">
       <div className="searchContain">
-        <div className="selectedItemsContainer">
-          <p>{selectedItemsList}</p>
-        </div>
         <input
           type="text"
           placeholder="Recherche"
           onChange={(e) => setSearch(e.target.value)}
         />
+        <div className="selectedItemsContainer">
+          <p>{selectedItemsList}</p>
+        </div>
       </div>
 
       <div className="umlSearch">

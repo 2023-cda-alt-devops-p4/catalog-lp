@@ -9,10 +9,11 @@
     border-radius: 10px;
     border: 0.1px solid #5959593e;
     background-color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
 }
 .UmlMain .searchContain{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     align-items: flex-start;
@@ -67,7 +68,8 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 .blockDiag .items{
-    margin-top: 5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -87,9 +89,6 @@
     transform: scale(1.1);
     background-color: #3392ffb6;
 }
-
-
-
 .umlContain{
     display: flex;
     flex-wrap: wrap;
