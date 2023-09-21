@@ -163,7 +163,7 @@ function MainUml() {
           </div>
         </div>
         <div className="blockDiag">
-          <h3>Diagramme d'architetures'</h3>
+          <h3>Diagramme d'Architetures</h3>
           <div className="items">
             {shcemaArchi
               .filter((item) => {
@@ -196,7 +196,6 @@ function MainUml() {
         onClose={handleModalClose}
         title={selectedItem?.title || ""}
         imageUrl={selectedItem?.image || ""}
-        description={selectedItem?.description || ""}
       />
     </div>
   );
