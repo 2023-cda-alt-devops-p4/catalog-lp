@@ -3,13 +3,13 @@
 .NavbarItems{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px;
     border-radius: 10px;
     background-color: transparent;
 }
 .NavbarItems a{
     color: #3392ff;
-    font-size: 2em;
+    font-size: 1.6em;
     align-self: center;
     justify-content: center;
     width: 10%;
