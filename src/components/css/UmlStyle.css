@@ -5,7 +5,7 @@
 }
 .UmlMain input{
     padding: 10px 10px ;
-    align-self: flex-end;
+    align-self: flex-start;
     border-radius: 10px;
     border: 0.1px solid #5959593e;
     background-color: hsl(0, 0%, 100%);
@@ -15,23 +15,39 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    align-items: flex-start;
 }
 .UmlMain .searchContain .selectedItemsContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.UmlMain .searchContain .selectedItemsContainer p{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 0.7em;
-    color: #fff;
+.selected-item{
     background-color: #3392ff;
     padding: 10px;
-    margin: 0 4px 6px;
+    font-size: 0.7em;
     border-radius: 10px;
-
+    margin: 0 4px 6px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.selected-item button{
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.UmlMain .searchContain .selectedItemsContainer p{
+    display: flex;
+    flex-wrap: wrap;
+} 
 .UmlMain .umlSearch{
     display: flex;
     flex-direction: column;
@@ -71,11 +87,14 @@
     transform: scale(1.1);
     background-color: #3392ffb6;
 }
+
+
+
 .umlContain{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10%;
+    gap: 2%;
     margin: 10% 0;
 }
 .umlCard{

@@ -1,5 +1,6 @@
 import { Component, useState } from "react";
 import { UMLData } from "./data/UMLData";
+import { TiDelete } from "react-icons/ti";
 import Modal from "./Modal";
 import "./css/UmlStyle.css";
 
@@ -69,7 +70,9 @@ function MainUml() {
   const selectedItemsList = selectedItemTitles.map((title, index) => (
     <div key={index} className="selected-item">
       {title}
-      <button onClick={() => removeSelectedItem(title)}>©</button>
+      <button onClick={() => removeSelectedItem(title)}>
+        <TiDelete className="icons-delete" />
+      </button>
     </div>
   ));
 
