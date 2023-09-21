@@ -86,7 +86,7 @@ export const UMLData = [
   },
   {
     id: 10,
-    title: "Diagramme d'Etat'",
+    title: "Diagramme d'Etat",
     url: "#",
     image: "",
     categorie: "diagramme de comportement",

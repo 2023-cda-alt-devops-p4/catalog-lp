@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillCloseSquare } from "react-icons/ai";
 import "./css/ModalStyle.css";
 
 interface ModalProps {
@@ -20,10 +21,19 @@ const Modal: React.FC<ModalProps> = ({
 
   return (
     <>
-      <div onClick={onClose} className="bg-modal"></div>
       <div className="modal">
+        <AiFillCloseSquare onClick={onClose} className="btn-modal" />
         <div className="modal-content">
           <h2>{title}</h2>
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
+          <img src={imageUrl} alt="" />
           <img src={imageUrl} alt="" />
           <p>{description}</p>
         </div>
