@@ -1,4 +1,5 @@
 import uml1 from "../../assets/images/uml-1.png";
+import uml2 from "../../assets/images/uml-2.png";
 
 export const UMLData = [
   {
@@ -14,8 +15,7 @@ export const UMLData = [
     id: 2,
     title: "Diagramme d'Objet",
     url: "#",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/17/Object_diagram.png",
+    image: uml2,
     categorie: "diagramme de structure",
     description:
       "Montre une instance spécifique d'une classe et ses relations avec d'autres objets à un moment donné.",

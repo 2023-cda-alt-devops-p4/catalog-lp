@@ -1,0 +1,41 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+}
+.home-page .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home-page .title img{
+    width: 60vw;
+}
+.home-page .title h1{
+    margin: 50px;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 400;
+    color: #00771A;
+}
+.home-page .title h1 span{
+    font-size: 1.1em;
+    font-weight: 900;
+    color: #D6955B;
+}
+
+.home-page .home-page-contain .section-uml-merise{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 30px;
+
+}
+.home-page .home-page-contain .section-uml-merise p{
+    width: 300px;
+    margin: 40px 0;
+    color: #D6955B;
+    font-weight: 700;
+    text-align: justify;
+    font-size: 1.4em;
+}
