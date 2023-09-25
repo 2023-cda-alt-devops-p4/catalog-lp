@@ -1,5 +1,8 @@
 import uml1 from "../../assets/images/uml-1.png";
 import uml2 from "../../assets/images/uml-2.png";
+import uml3 from "../../assets/images/uml-3.png";
+import uml4 from "../../assets/images/uml-4.png";
+import uml5 from "../../assets/images/uml-5.png";
 
 export const UMLData = [
   {
@@ -24,8 +27,7 @@ export const UMLData = [
     id: 3,
     title: "Diagramme de Composants",
     url: "#",
-    image:
-      "https://images.ctfassets.net/qop92tnevinq/01zVm12liyJndJ1ke4PjAZ/c05ad9418d20fd1c1e52465b03646c52/Component_diagram-web.png",
+    image: uml3,
     categorie: "diagramme de structure",
     description:
       "Modélise la structure des composants logiciels et leurs dépendances.",
@@ -34,8 +36,7 @@ export const UMLData = [
     id: 4,
     title: "Diagramme de Package",
     url: "#",
-    image:
-      "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/discovery-2020/feature-images/package-diagram-UML-feature-image-2020@2x.png",
+    image: uml4,
     categorie: "diagramme de structure",
     description:
       "Représente la structure de paquetage d'un modèle UML, montrant comment les éléments sont organisés en groupes logiques.",
@@ -44,7 +45,7 @@ export const UMLData = [
     id: 5,
     title: "Diagramme de Déploiement",
     url: "#",
-    image: "https://www.edrawsoft.com/template/deployment-chart.png",
+    image: uml5,
     categorie: "diagramme de structure",
     description:
       "Montre la disposition physique des composants logiciels et matériels d'un système, en indiquant comment ils sont déployés sur des nœuds physiques.",
