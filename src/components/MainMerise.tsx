@@ -42,28 +42,22 @@ function MainUml() {
 
   const allUmlItems = MeriseData.map((item, index) => (
     <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
   const selectedUmlItems = MeriseData.filter((item) =>
     selectedItemTitles.includes(item.title)
   ).map((item, index) => (
     <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
 

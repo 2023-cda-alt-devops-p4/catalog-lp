@@ -72,10 +72,10 @@
     padding: 10px;
 }
 .blockDiag h3{
-    color: #844d1c;
+    color: #D6955B;
     font-family: 'Cormorant', serif;
     text-transform: capitalize;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: 700;
     width: 100%;
     font-weight: 700;
@@ -112,16 +112,16 @@
     margin: 10% 0;
 }
 .umlCard{
-    height: 420px;
+    height: 480px;
     width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Fira Sans', sans-serif;
     margin: 60px 0;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    background-color: #844d1c21;
+    background-color: #ffffff;
+    border: 1px solid #c5b053;
 }
 .umlCard h4{
     font-size: 2em;
@@ -130,7 +130,7 @@
     font-weight: 700;
     font-family: 'Cormorant', serif;
     text-transform: uppercase;
-    text-align:center ;
+    text-align: center ;
 }
 .umlCard p{
     font-size: 1.2em;
@@ -151,6 +151,6 @@
     cursor: pointer;
 }
 .umlCard .plusInfos:hover{
-    background-color: #35280f31;
+    background-color: #7855364d;
     color: #FFF;
 }
