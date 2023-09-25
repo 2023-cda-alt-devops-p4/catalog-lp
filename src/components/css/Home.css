@@ -1,6 +1,7 @@
 .home-page{
     display: flex;
     flex-direction: column;
+    color: #00771A;
 }
 .home-page .title{
     display: flex;
@@ -23,19 +24,25 @@
     color: #D6955B;
 }
 
+.home-page .home-page-contain p {
+    margin-bottom: 60px;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: justify;
+}
 .home-page .home-page-contain .section-uml-merise{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
     padding: 30px;
 
 }
 .home-page .home-page-contain .section-uml-merise p{
-    width: 300px;
+    width: 360px;
     margin: 40px 0;
-    color: #D6955B;
     font-weight: 700;
     text-align: justify;
     font-size: 1.4em;
 }
+
