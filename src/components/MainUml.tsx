@@ -37,28 +37,22 @@ function MainUml() {
 
   const allUmlItems = UMLData.map((item, index) => (
     <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
   const selectedUmlItems = UMLData.filter((item) =>
     selectedItemTitles.includes(item.title)
   ).map((item, index) => (
     <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
 
@@ -68,11 +62,14 @@ function MainUml() {
     );
   };
   const selectedItemsList = selectedItemTitles.map((title, index) => (
-    <div key={index} className="selected-item">
+    <div
+      key={index}
+      className="selected-item"
+      onClick={() => removeSelectedItem(title)}
+    >
       {title}
-      <button onClick={() => removeSelectedItem(title)}>
-        <TiDelete className="icons-delete" />
-      </button>
+
+      <TiDelete className="icons-delete" />
     </div>
   ));
 
