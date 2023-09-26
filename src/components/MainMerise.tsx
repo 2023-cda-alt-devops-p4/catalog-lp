@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 import { MeriseData } from "./data/MeriseData";
 import Modal from "./Modal";
 import "./css/UmlStyle.css";

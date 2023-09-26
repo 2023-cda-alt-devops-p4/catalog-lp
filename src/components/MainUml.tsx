@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { UMLData } from "./data/UMLData";
 import { TiDelete } from "react-icons/ti";
 import Modal from "./Modal";
@@ -110,7 +110,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a
@@ -133,7 +133,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a
