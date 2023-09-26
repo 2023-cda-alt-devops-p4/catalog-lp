@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 80px 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
 }
 .home-page .title{
     display: flex;
@@ -45,13 +45,11 @@
 
 }
 .home-page .home-page-contain .section-uml-merise .text-uml-home{
-    max-width: 70%;
     margin: 40px 0;
-    text-align: justify;
+    text-align: left;
     font-size: 1.4em;
 }
 .home-page .home-page-contain .section-uml-merise .text-merise-home{
-    max-width: 70%;
     margin: 40px 0;
     align-self: flex-end;
     text-align: right;

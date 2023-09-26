@@ -3,6 +3,16 @@ import uml2 from "../../assets/images/uml-2.png";
 import uml3 from "../../assets/images/uml-3.png";
 import uml4 from "../../assets/images/uml-4.png";
 import uml5 from "../../assets/images/uml-5.png";
+import uml6 from "../../assets/images/uml-6.png";
+import uml7 from "../../assets/images/uml-7.png";
+import uml8 from "../../assets/images/uml-8.png";
+import uml9 from "../../assets/images/uml-9.png";
+import uml10 from "../../assets/images/uml-10.png";
+import uml11 from "../../assets/images/uml-11.png";
+import uml12 from "../../assets/images/uml-12.png";
+import uml13 from "../../assets/images/uml-13.png";
+import uml14 from "../../assets/images/uml-14.png";
+import uml15 from "../../assets/images/uml-15.png";
 
 export const UMLData = [
   {
@@ -54,7 +64,7 @@ export const UMLData = [
     id: 6,
     title: "Diagramme de Vue d'Ensemble",
     url: "#",
-    image: "",
+    image: uml6,
     categorie: "diagramme de structure",
     description:
       "Montre la structure interne d'un composant complexe, en montrant comment il est composé d'autres éléments.",
@@ -63,7 +73,7 @@ export const UMLData = [
     id: 7,
     title: "Diagramme de Cas d'Utilisation",
     url: "#",
-    image: "",
+    image: uml7,
     categorie: "diagramme de comportement",
     description:
       "Modélise les acteurs (utilisateurs) du système, leurs interactions avec le système et les cas d'utilisation (fonctionnalités) offerts par le système.",
@@ -72,7 +82,7 @@ export const UMLData = [
     id: 8,
     title: "Diagramme de Séquence",
     url: "#",
-    image: "",
+    image: uml8,
     categorie: "diagramme de comportement",
     description:
       "Représente la séquence d'interactions entre les objets ou composants d'un système au fil du temps, en mettant l'accent sur l'ordre des messages échangés.",
@@ -81,7 +91,7 @@ export const UMLData = [
     id: 9,
     title: "Diagramme de Collaboration",
     url: "#",
-    image: "",
+    image: uml9,
     categorie: "diagramme de comportement",
     description:
       "Est similaire au diagramme de séquence, mais met l'accent sur les connexions entre les objets plutôt que sur l'ordre temporel des messages.",
@@ -90,7 +100,7 @@ export const UMLData = [
     id: 10,
     title: "Diagramme d'Etat",
     url: "#",
-    image: "",
+    image: uml10,
     categorie: "diagramme de comportement",
     description:
       "Modélise les différents états qu'un objet peut prendre au cours de son cycle de vie et les transitions entre ces états en réponse à des événements.",
@@ -99,7 +109,7 @@ export const UMLData = [
     id: 11,
     title: "Diagramme d'Activité",
     url: "#",
-    image: "",
+    image: uml11,
     categorie: "diagramme de comportement",
     description:
       "Modélise le flux de travail ou le comportement d'un processus ou d'une fonctionnalité, en utilisant des actions, des décisions, des synchronisations, etc.",
@@ -108,7 +118,7 @@ export const UMLData = [
     id: 12,
     title: "Diagramme de Machine à Etats",
     url: "#",
-    image: "",
+    image: uml12,
     categorie: "diagramme de comportement",
     description:
       "Est similaire au diagramme d'état, mais se concentre davantage sur les transitions d'état dans un contexte plus global.",
@@ -117,34 +127,25 @@ export const UMLData = [
     id: 13,
     title: "Diagramme de Communication",
     url: "#",
-    image: "",
+    image: uml13,
     categorie: "diagramme de comportement",
     description:
       "Utilisé pour modéliser les interactions entre objets dans un contexte donné.",
   },
   {
     id: 14,
-    title: "Diagramme de Séquence Globale",
-    url: "#",
-    image: "",
-    categorie: "diagramme de comportement",
-    description:
-      "Offre une vue d'ensemble des interactions entre différents diagrammes d'interaction, aidant à montrer comment ils sont liés.",
-  },
-  {
-    id: 15,
     title: "Diagramme de Temps",
     url: "#",
-    image: "",
+    image: uml14,
     categorie: "diagramme de comportement",
     description:
       "Montre l'ordre des événements dans un système et comment ils se chevauchent dans le temps.",
   },
   {
-    id: 16,
+    id: 15,
     title: "Diagramme d'Intéraction",
     url: "#",
-    image: "",
+    image: uml15,
     categorie: "diagramme de comportement",
     description:
       "Offre une vue d'ensemble des interactions entre objets et d'autres éléments, aidant à montrer comment ils sont liés.",
