@@ -12,6 +12,7 @@
 }
 .home-page .title img{
     width: 60vw;
+    margin-bottom: 10%;
 }
 .home-page .title h1{
     margin: 50px;
@@ -26,7 +27,13 @@
     font-weight: 900;
     color: #844d1c;
 }
-
+.home-page .home-page-contain{
+    opacity: 0;
+    transition: all 2s;
+}
+.home-page .home-page-contain.zoom-out{
+    opacity: 1;
+}
 .home-page .home-page-contain p {
     font-size: 1.2em;
     text-align: justify;

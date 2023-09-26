@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo2 from "../assets/images/logo2.png";
 import "./css/Home.css";
 
 function Home() {
+  const [zoomOut, setZoomOut] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setZoomOut(true);
+      } else {
+        setZoomOut(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="home-page">
       <div className="title">
@@ -13,7 +29,7 @@ function Home() {
           <span>Merise</span>.
         </h1>
       </div>
-      <div className="home-page-contain">
+      <div className={`home-page-contain ${zoomOut ? "zoom-out" : ""}`}>
         <div className="section-uml-merise">
           <p className="text-uml-home">
             Découvrez UML, le langage de modélisation universel utilisé pour

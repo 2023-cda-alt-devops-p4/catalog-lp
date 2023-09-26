@@ -1,11 +1,15 @@
-
 .NavbarItems{
     display: flex;
     justify-content: space-between;
     margin: 20px 40px;
     border-radius: 10px;
     background-color: transparent;
+    opacity: 1;
+    transition: all 1.4s;
 }
+.NavbarItems.zoom-out {
+    opacity: 0; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  }
 .NavbarItems a{
     color: #844d1c;
     font-size: 2.2em;
