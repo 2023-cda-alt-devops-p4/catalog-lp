@@ -19,9 +19,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, imageUrl }) => {
         <div className="modal-content">
           <h2>{title}</h2>
           <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
-          <img src={imageUrl} alt="" />
         </div>
       </div>
     </>

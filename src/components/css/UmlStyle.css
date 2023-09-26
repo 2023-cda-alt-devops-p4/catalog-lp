@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 .UmlMain {
     display: flex;
@@ -23,7 +21,9 @@
     margin: 20px 0;
     width: 100%;
     outline: none;
-    color: #00771A;
+    color: #844d1c;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 1.4em;
 }
 
 .UmlMain .searchContain .selectedItemsContainer {
@@ -32,25 +32,29 @@
     align-items: center;
 }
 .selected-item{
-    background-color: #feeaa195;
+    background-color: #ffffff;
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 0 4px 6px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #00771A;
-    font-family: 'Chivo', sans-serif;
+    color: #00430e;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
 }
-.selected-item button{
+.selected-item:hover{
+    color: #00430f65;
+}
+.selected-item .icons-delete{
     margin: 0 6px;
     display: flex;
     align-items: center;
     background-color: transparent;
     border: none;
-    color: #00771A;
+    color: #00430e;
 }
 .UmlMain .searchContain .selectedItemsContainer p{
     display: flex;
@@ -69,11 +73,12 @@
 }
 .blockDiag h3{
     color: #D6955B;
-    font-size: 1.2em;
-    font-weight: 900;
+    font-family: 'Cormorant', serif;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 700;
     width: 100%;
     font-weight: 700;
-    font-family: 'Chivo', sans-serif;
     font-weight: 900;
 }
 .blockDiag .items{
@@ -84,59 +89,74 @@
 }
 .blockDiag .items a{
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 0 10px 4px 0px;
-    background-color: #d6945bb8;
+    background-color: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
+    color: #844d1c;
     font-weight: 700;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 .blockDiag .items a:hover{
     transform: scale(1.1);
-    background-color: #26a39b9d;
+    background-color: rgba(214, 148, 91, 0.279)
 }
+
+
+
 .umlContain{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4%;
+    gap: 5%;
     margin: 10% 0;
 }
 .umlCard{
-    height: 220px;
+    height: 480px;
+    width: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Hind Madurai', sans-serif;
     margin: 60px 0;
-    width: 340px;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 0 20px;
-    background-color: #FEEAA1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #c5b053;
+    opacity: 0;
+    transition: all 1.3s;
+}
+.umlCard.zoom-out{
+    opacity: 1;
 }
 .umlCard h4{
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 20px;
     color: #D6955B;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    text-align: center ;
 }
 .umlCard p{
-    font-size: 0.8em;
+    font-size: 1.2em;
     text-align: justify;
 }
 .umlCard .plusInfos{
     margin: 20px 0;
     padding: 10px;
-    width: 100%;
-    background-color: #FFF9EA;
+    width: 70%;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 1.6em;
+    background-color: #ffffff;
     border: none;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #00771A;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: #D6955B;
     font-weight: 700;
     transition: all 0.4s;
     cursor: pointer;
 }
 .umlCard .plusInfos:hover{
-    background-color: #3392ff86;
+    background-color: #7855364d;
+    color: #FFF;
 }

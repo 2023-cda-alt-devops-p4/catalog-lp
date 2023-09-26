@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useEffect, useState } from "react";
 import { UMLData } from "./data/UMLData";
 import { TiDelete } from "react-icons/ti";
 import Modal from "./Modal";
@@ -9,6 +9,7 @@ function MainUml() {
   const [selectedItemTitles, setSelectedItemTitles] = useState<string[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [zoomOut, setZoomOut] = useState(false);
 
   const diagrammesStructure = UMLData.filter(
     (item) => item.categorie === "diagramme de structure"
@@ -36,29 +37,24 @@ function MainUml() {
   };
 
   const allUmlItems = UMLData.map((item, index) => (
-    <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+    // <div className="umlCard" key={index}>
+    <div className={`umlCard ${zoomOut ? "zoom-out" : ""}`} key={index}>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
   const selectedUmlItems = UMLData.filter((item) =>
     selectedItemTitles.includes(item.title)
   ).map((item, index) => (
-    <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+    <div className={`umlCard ${zoomOut ? "zoom-out" : ""}`} key={index}>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
 
@@ -68,13 +64,30 @@ function MainUml() {
     );
   };
   const selectedItemsList = selectedItemTitles.map((title, index) => (
-    <div key={index} className="selected-item">
+    <div
+      key={index}
+      className="selected-item"
+      onClick={() => removeSelectedItem(title)}
+    >
       {title}
-      <button onClick={() => removeSelectedItem(title)}>
-        <TiDelete className="icons-delete" />
-      </button>
+
+      <TiDelete className="icons-delete" />
     </div>
   ));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setZoomOut(true);
+      } else {
+        setZoomOut(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="UmlMain">
@@ -97,7 +110,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a
@@ -120,7 +133,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a

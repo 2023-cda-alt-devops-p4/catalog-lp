@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useEffect, useState } from "react";
 import { MeriseData } from "./data/MeriseData";
 import Modal from "./Modal";
 import "./css/UmlStyle.css";
@@ -8,6 +8,7 @@ function MainUml() {
   const [selectedItemTitles, setSelectedItemTitles] = useState<string[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [zoomOut, setZoomOut] = useState(false);
 
   const schemaConcept = MeriseData.filter(
     (item) => item.categorie === "schemas conceptuels"
@@ -41,29 +42,23 @@ function MainUml() {
   };
 
   const allUmlItems = MeriseData.map((item, index) => (
-    <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+    <div className={`umlCard ${zoomOut ? "zoom-out" : ""}`} key={index}>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
   const selectedUmlItems = MeriseData.filter((item) =>
     selectedItemTitles.includes(item.title)
   ).map((item, index) => (
-    <div className="umlCard" key={index}>
-      <div className="umlItems">
-        <h4>{item.title}</h4>
-        <p>{item.description}</p>
-        <button className="plusInfos" onClick={() => handleModalOpen(item)}>
-          Voir un exemple
-        </button>
-      </div>
-      <a href={item.url}></a>
+    <div className={`umlCard ${zoomOut ? "zoom-out" : ""}`} key={index}>
+      <h4>{item.title}</h4>
+      <p>{item.description}</p>
+      <button className="plusInfos" onClick={() => handleModalOpen(item)}>
+        Voir un exemple
+      </button>
     </div>
   ));
 
@@ -78,6 +73,20 @@ function MainUml() {
       <button onClick={() => removeSelectedItem(title)}>©</button>
     </div>
   ));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setZoomOut(true);
+      } else {
+        setZoomOut(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="UmlMain">
@@ -100,7 +109,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a
@@ -123,7 +132,7 @@ function MainUml() {
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
-                  : item.title.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search.toLowerCase());
               })
               .map((item, index) => (
                 <a
@@ -200,5 +209,4 @@ function MainUml() {
     </div>
   );
 }
-
 export default MainUml;

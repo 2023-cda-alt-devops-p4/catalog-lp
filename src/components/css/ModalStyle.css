@@ -6,7 +6,7 @@
     height: 100%;
     width: 100vw;
     top: 0;
-    background-color: #FFF9EA;
+    background-color: #fcfcfc;
     border: 0.1px solid #0000002a;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -20,7 +20,7 @@
     height: 40px;
     display: flex;
     align-self: flex-end;
-    color: #00771A;
+    color: #844d1c;
     margin: 20px;
 }
 .modal-content{
@@ -31,10 +31,11 @@
 
 }
 .modal h2 {
-    font-size: 1.6em;
+    font-size: 3em;
     display: flex;
     align-self: center;
     margin: 40px 0;
+    font-family: 'Cormorant Unicase', serif;
 }
 .modal img{
     display: flex;
