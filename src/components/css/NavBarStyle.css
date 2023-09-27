@@ -5,6 +5,7 @@
     padding: 20px 0;
     opacity: 1;
     transition: all 1.4s;
+    
 }
 .NavbarItems.zoom-out {
     opacity: 0;

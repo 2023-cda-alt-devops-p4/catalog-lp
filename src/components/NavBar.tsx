@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { RiMoonFill, RiMenu3Fill } from "react-icons/ri";
 import "./css/NavBarStyle.css";
+import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
 function NavBar() {
   const [zoomOut, setZoomOut] = useState(false);
   const [showLink, setShowLink] = useState(false);
+  const { theme, HandleTheme } = useContext<IThemeContext>(ThemeContext);
 
   const handleShowLink = () => {
     setShowLink((prevState) => !prevState);
@@ -30,7 +32,7 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className={`NavbarItems ${zoomOut ? "zoom-out" : ""}`}>
+    <nav className={`NavbarItems ${zoomOut && "zoom-out"}`}>
       <button className="btn-menu" onClick={handleShowLink}>
         <RiMenu3Fill className="icon-btn-menu" />
       </button>
@@ -43,17 +45,20 @@ function NavBar() {
       </div>
       <div
         className={`link-menu-burger ${
-          showLink ? "link-menu-burger" : " link-menu-burger active"
+          !showLink ? "link-menu-burger" : " link-menu-burger active"
         }`}
       >
-        <Link to="/uml" onClick={handleHideLink}>
+        <Link to="/uml" onClick={() => setShowLink((prevState) => !prevState)}>
           UML
         </Link>
-        <Link to="/merise" onClick={handleHideLink}>
+        <Link
+          to="/merise"
+          onClick={() => setShowLink((prevState) => !prevState)}
+        >
           Merise
         </Link>
       </div>
-      <button className="dark-mode">
+      <button className="dark-mode" onClick={HandleTheme}>
         <RiMoonFill className="icon-dark-mode" />
         <p>Dark Mode</p>
       </button>
