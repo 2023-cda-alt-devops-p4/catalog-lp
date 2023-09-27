@@ -19,13 +19,13 @@
     text-align: center;
     font-size: 2.2em;
     font-weight: 400;
-    color: #844d1c;
+    color: var(--text-color1);
     font-family: 'Cormorant', serif;
 }
 .home-page .title h1 span{
     font-size: 1.1em;
     font-weight: 900;
-    color: #844d1c;
+    color: var(--text-color1);
 }
 .home-page .home-page-contain{
     opacity: 0;
@@ -64,6 +64,6 @@
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
-    color: #844d1c;
+    color: var(--text-color1);
 }
 

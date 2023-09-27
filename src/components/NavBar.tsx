@@ -9,7 +9,10 @@ function NavBar() {
   const [showLink, setShowLink] = useState(false);
 
   const handleShowLink = () => {
-    setShowLink(!showLink);
+    setShowLink((prevState) => !prevState);
+  };
+  const handleHideLink = () => {
+    handleShowLink();
   };
 
   useEffect(() => {
@@ -25,8 +28,6 @@ function NavBar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  console.log(showLink);
 
   return (
     <nav className={`NavbarItems ${zoomOut ? "zoom-out" : ""}`}>
@@ -45,8 +46,12 @@ function NavBar() {
           showLink ? "link-menu-burger" : " link-menu-burger active"
         }`}
       >
-        <Link to="/uml">UML</Link>
-        <Link to="/merise">Merise</Link>
+        <Link to="/uml" onClick={handleHideLink}>
+          UML
+        </Link>
+        <Link to="/merise" onClick={handleHideLink}>
+          Merise
+        </Link>
       </div>
       <button className="dark-mode">
         <RiMoonFill className="icon-dark-mode" />

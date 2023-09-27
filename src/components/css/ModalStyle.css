@@ -6,7 +6,7 @@
     height: 100%;
     width: 100vw;
     top: 0;
-    background-color: #fcfcfc;
+    background-color: var(--bg-color1);
     border: 0.1px solid #0000002a;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -20,7 +20,7 @@
     height: 40px;
     display: flex;
     align-self: flex-end;
-    color: #844d1c;
+    color: var(--text-color1);
     margin: 20px;
 }
 .modal-content{
