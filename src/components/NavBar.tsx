@@ -6,6 +6,11 @@ import "./css/NavBarStyle.css";
 
 function NavBar() {
   const [zoomOut, setZoomOut] = useState(false);
+  const [showLink, setShowLink] = useState(false);
+
+  const handleShowLink = () => {
+    setShowLink(!showLink);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +26,11 @@ function NavBar() {
     };
   }, []);
 
+  console.log(showLink);
+
   return (
     <nav className={`NavbarItems ${zoomOut ? "zoom-out" : ""}`}>
-      <button className="btn-menu">
+      <button className="btn-menu" onClick={handleShowLink}>
         <RiMenu3Fill className="icon-btn-menu" />
       </button>
       <Link to="/">
@@ -33,7 +40,11 @@ function NavBar() {
         <Link to="/uml">UML</Link>
         <Link to="/merise">Merise</Link>
       </div>
-      <div className="link-menu-burger">
+      <div
+        className={`link-menu-burger ${
+          showLink ? "link-menu-burger" : " link-menu-burger active"
+        }`}
+      >
         <Link to="/uml">UML</Link>
         <Link to="/merise">Merise</Link>
       </div>
