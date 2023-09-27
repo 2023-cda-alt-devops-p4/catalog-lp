@@ -38,7 +38,11 @@ function NavBar() {
       }`}
     >
       <button className="btn-menu" onClick={handleShowLink}>
-        <RiMenu3Fill className="icon-btn-menu" />
+        {isLight ? (
+          <RiMenu3Fill color="#000" className="icon-btn-menu" />
+        ) : (
+          <RiMenu3Fill color="#FFF" className="icon-btn-menu" />
+        )}
       </button>
       <Link to="/">
         <img src={theme === "light" ? LogoLight : LogoDark} alt="logo" />
@@ -64,12 +68,14 @@ function NavBar() {
       </div>
       <button className="dark-mode" onClick={HandleTheme}>
         {isLight ? (
-          <RiMoonFill color={"#000"} className="icon-dark-mode" />
+          <RiMoonFill color="#844d1c" className="icon-dark-mode" />
         ) : (
-          <RiSunLine color="#FFF" className="icon-dark-mode" />
+          <RiSunLine color="#fff0e3" className="icon-dark-mode" />
         )}
 
-        <p>{isLight ? "Dark Mode" : "Light Mode"}</p>
+        <p className={isLight ? "" : "dark"}>
+          {isLight ? "Dark Mode" : "Light Mode"}
+        </p>
       </button>
     </nav>
   );

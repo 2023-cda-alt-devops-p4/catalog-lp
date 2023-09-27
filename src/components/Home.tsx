@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import Logo2 from "../assets/images/logo2.png";
+import { useContext, useEffect, useState } from "react";
+import Logo2Light from "../assets/images/logo2.png";
+import Logo2Dark from "../assets/images/logoo2.png";
 import "./css/Home.css";
+import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
 function Home() {
   const [zoomOut, setZoomOut] = useState(false);
+  const { theme, HandleTheme } = useContext<IThemeContext>(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,9 +23,9 @@ function Home() {
   }, []);
 
   return (
-    <div className="home-page">
+    <div className={`home-page ${theme === "dark" && "dark"}`}>
       <div className="title">
-        <img src={Logo2} alt="logo" />
+        <img src={theme === "light" ? Logo2Light : Logo2Dark} alt="logo" />
         <h1>
           Bienvenue sur Diagram Hub! Des explications rapides et claires sur
           deux méthodologies essentielles : <span>UML</span> et{" "}
