@@ -25,6 +25,9 @@
     font-family: var(--font-title);
     font-size: 1.4em;
 }
+.UmlMain input.dark{
+    color: var(--dark-color1);
+}
 
 .UmlMain .searchContain .selectedItemsContainer {
     display: flex;
@@ -44,6 +47,9 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.4s;
+}
+.selected-item.dark{
+    background-color: var(--bg-color2);
 }
 .selected-item:hover{
     color: #00430f65;
@@ -79,7 +85,9 @@
     font-weight: 700;
     width: 100%;
     font-weight: 700;
-    font-weight: 900;
+}
+.blockDiag h3.dark{
+    color: var(--dark-color2);
 }
 .blockDiag .items{
     margin-top: 20px;
@@ -97,12 +105,13 @@
     font-weight: 700;
     transition: all 0.4s;
 }
+.blockDiag .items a.dark{
+    background-color: var(--bg-color2);
+}
 .blockDiag .items a:hover{
     transform: scale(1.1);
     background-color: rgba(214, 148, 91, 0.279)
 }
-
-
 
 .umlContain{
     display: flex;
@@ -126,6 +135,9 @@
     opacity: 0;
     transition: all 1.3s;
 }
+.umlCard.dark {
+    background-color: var(--bg-color2);
+}
 .umlCard.zoom-out{
     opacity: 1;
 }
@@ -137,6 +149,9 @@
     font-family: 'Cormorant', serif;
     text-transform: uppercase;
     text-align: center ;
+}
+.umlCard h4.dark{
+    color: var(--dark-color2);
 }
 .umlCard p{
     font-size: 1.2em;
@@ -155,6 +170,10 @@
     font-weight: 700;
     transition: all 0.4s;
     cursor: pointer;
+}
+.umlCard .plusInfos.dark{
+    background-color: var(--bg-color2);
+    color: var(--dark-color2);
 }
 .umlCard .plusInfos:hover{
     background-color: #7855364d;

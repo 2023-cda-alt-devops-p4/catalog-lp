@@ -2,10 +2,9 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    padding: 20px 0;
+    padding: 20px;
     opacity: 1;
     transition: all 1.4s;
-    
 }
 .NavbarItems.zoom-out {
     opacity: 0;
@@ -26,6 +25,9 @@
     font-weight: 700;
     transition: all 0.5s;
     display: flex;
+}
+.NavbarItems.dark a {
+    color: var(--dark-color1);
 }
 .NavbarItems a:hover {
     transform: scale(1.1);
@@ -66,6 +68,9 @@
     transform: translateX(100%);
     transition: all 0.5s;
 }
+.NavbarItems .link-menu-burger.dark{
+    background-color: var(--bg-color2);
+}
 .NavbarItems .link-menu-burger.active{
     transform: translateX(0);
 }
@@ -77,6 +82,9 @@
 }
 .NavbarItems .dark-mode p{
     margin-left: 20px;
+}
+.NavbarItems .dark-mode p.dark{
+    color: #fff;
 }
 @media(max-width: 820px) {
     .NavbarItems{

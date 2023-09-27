@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.png";
-import { RiMoonFill, RiMenu3Fill } from "react-icons/ri";
+import LogoLight from "../assets/images/logo.png";
+import LogoDark from "../assets/images/logoo.png";
+import { RiMoonFill, RiMenu3Fill, RiSunLine } from "react-icons/ri";
 import "./css/NavBarStyle.css";
 import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
@@ -12,9 +13,6 @@ function NavBar() {
 
   const handleShowLink = () => {
     setShowLink((prevState) => !prevState);
-  };
-  const handleHideLink = () => {
-    handleShowLink();
   };
 
   useEffect(() => {
@@ -31,13 +29,19 @@ function NavBar() {
     };
   }, []);
 
+  const isLight = theme === "light";
+
   return (
-    <nav className={`NavbarItems ${zoomOut && "zoom-out"}`}>
+    <nav
+      className={`NavbarItems ${zoomOut && "zoom-out"} ${
+        theme === "dark" && "dark"
+      }`}
+    >
       <button className="btn-menu" onClick={handleShowLink}>
         <RiMenu3Fill className="icon-btn-menu" />
       </button>
       <Link to="/">
-        <img src={Logo} alt="logo" />
+        <img src={theme === "light" ? LogoLight : LogoDark} alt="logo" />
       </Link>
       <div className="link-page">
         <Link to="/uml">UML</Link>
@@ -59,8 +63,13 @@ function NavBar() {
         </Link>
       </div>
       <button className="dark-mode" onClick={HandleTheme}>
-        <RiMoonFill className="icon-dark-mode" />
-        <p>Dark Mode</p>
+        {isLight ? (
+          <RiMoonFill color={"#000"} className="icon-dark-mode" />
+        ) : (
+          <RiSunLine color="#FFF" className="icon-dark-mode" />
+        )}
+
+        <p>{isLight ? "Dark Mode" : "Light Mode"}</p>
       </button>
     </nav>
   );
