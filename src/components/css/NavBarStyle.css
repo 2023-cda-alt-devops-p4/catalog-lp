@@ -1,16 +1,20 @@
-.NavbarItems{
+.NavbarItems {
     display: flex;
     justify-content: space-between;
-    margin: 20px 40px;
-    border-radius: 10px;
     background-color: transparent;
+    padding: 20px 0;
     opacity: 1;
     transition: all 1.4s;
 }
 .NavbarItems.zoom-out {
-    opacity: 0; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  }
-.NavbarItems a{
+    opacity: 0;
+}
+.NavbarItems .link-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.NavbarItems a {
     color: #844d1c;
     font-size: 2.2em;
     align-self: center;
@@ -22,9 +26,67 @@
     transition: all 0.5s;
     display: flex;
 }
-.NavbarItems a:hover{
+.NavbarItems a:hover {
     transform: scale(1.1);
 }
-.NavbarItems a img{
+.NavbarItems a img {
     max-width: 100px;
+}
+.NavbarItems .dark-mode{
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+.NavbarItems .btn-menu{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.NavbarItems .link-menu-burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #ffffff;
+}
+.NavbarItems .dark-mode .icon-dark-mode{
+    transition: all 0.5s;
+}
+.NavbarItems .dark-mode .icon-dark-mode:hover{
+    transform: scale(1.2);
+}
+.NavbarItems .dark-mode p{
+    margin-left: 20px;
+}
+@media(min-width: 380px) {
+    .NavbarItems{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .NavbarItems .link-page{
+        display: none;
+    }
+    .NavbarItems .dark-mode p {
+        display: none;
+    }
+    .NavbarItems .btn-menu{
+        display: flex;
+        align-items: center;
+    }
+    .NavbarItems .btn-menu .icon-btn-menu,
+    .NavbarItems .icon-dark-mode{
+        height: 20px;
+        width: 20px;
+    }
 }

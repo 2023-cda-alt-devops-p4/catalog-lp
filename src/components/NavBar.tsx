@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
+import { RiMoonFill, RiMenu3Fill } from "react-icons/ri";
 import "./css/NavBarStyle.css";
 
 function NavBar() {
@@ -22,11 +23,24 @@ function NavBar() {
 
   return (
     <nav className={`NavbarItems ${zoomOut ? "zoom-out" : ""}`}>
+      <button className="btn-menu">
+        <RiMenu3Fill className="icon-btn-menu" />
+      </button>
       <Link to="/">
         <img src={Logo} alt="logo" />
       </Link>
-      <Link to="/uml">UML</Link>
-      <Link to="/merise">Merise</Link>
+      <div className="link-page">
+        <Link to="/uml">UML</Link>
+        <Link to="/merise">Merise</Link>
+      </div>
+      <div className="link-menu-burger">
+        <Link to="/uml">UML</Link>
+        <Link to="/merise">Merise</Link>
+      </div>
+      <button className="dark-mode">
+        <RiMoonFill className="icon-dark-mode" />
+        <p>Dark Mode</p>
+      </button>
     </nav>
   );
 }

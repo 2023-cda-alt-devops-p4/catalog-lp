@@ -21,8 +21,8 @@
     margin: 20px 0;
     width: 100%;
     outline: none;
-    color: #844d1c;
-    font-family: 'Cormorant Unicase', serif;
+    color: var(--text-color1);
+    font-family: var(--font-title);
     font-size: 1.4em;
 }
 
@@ -32,7 +32,7 @@
     align-items: center;
 }
 .selected-item{
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     padding: 10px;
     font-size: 0.8em;
     margin: 0 4px 6px;
