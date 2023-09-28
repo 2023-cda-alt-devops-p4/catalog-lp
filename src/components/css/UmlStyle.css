@@ -1,4 +1,3 @@
-
 .UmlMain {
     display: flex;
     flex-direction: column;
@@ -6,15 +5,16 @@
     padding: 0 40px;
 }
 
-.UmlMain .searchContain{
+.UmlMain .searchContain {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     align-items: flex-start;
 }
-.UmlMain input{
-    padding: 10px 20px ;
+
+.UmlMain input {
+    padding: 10px 20px;
     align-self: flex-start;
     border: none;
     border-bottom: 1px solid var(--text-color1);
@@ -26,7 +26,8 @@
     font-family: var(--font-title);
     font-size: 1.4em;
 }
-.UmlMain.dark input{
+
+.UmlMain.dark input {
     color: var(--dark-color1);
 }
 
@@ -35,7 +36,8 @@
     flex-direction: row;
     align-items: center;
 }
-.selected-item{
+
+.selected-item {
     background-color: var(--bg-color1);
     padding: 10px;
     font-size: 0.8em;
@@ -49,16 +51,20 @@
     cursor: pointer;
     transition: all 0.4s;
 }
-.dark .selected-item{
+
+.dark .selected-item {
     color: var(--dark-color1);
 }
-.dark .selected-item{
+
+.dark .selected-item {
     background-color: #fef0e55a;
 }
-.selected-item:hover{
+
+.selected-item:hover {
     color: #43390065;
 }
-.selected-item .icons-delete{
+
+.selected-item .icons-delete {
     margin: 0 6px;
     display: flex;
     align-items: center;
@@ -66,22 +72,26 @@
     border: none;
     color: var(--dark-color1);
 }
-.UmlMain .searchContain .selectedItemsContainer p{
+
+.UmlMain .searchContain .selectedItemsContainer p {
     display: flex;
     flex-wrap: wrap;
-} 
-.UmlMain .umlSearch{
+}
+
+.UmlMain .umlSearch {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 40px;
 }
-.UmlMain .blockDiag{
+
+.UmlMain .blockDiag {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-.blockDiag h3{
+
+.blockDiag h3 {
     color: var(--text-color2);
     font-family: 'Cormorant', serif;
     text-transform: capitalize;
@@ -90,16 +100,19 @@
     width: 100%;
     font-weight: 700;
 }
-.blockDiag h3.dark{
+
+.blockDiag h3.dark {
     color: var(--dark-color2);
 }
-.blockDiag .items{
+
+.blockDiag .items {
     margin-top: 20px;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
 }
-.blockDiag .items a{
+
+.blockDiag .items a {
     padding: 10px;
     font-size: 0.8em;
     margin: 0 10px 4px 0px;
@@ -109,23 +122,26 @@
     font-weight: 700;
     transition: all 0.4s;
 }
-.dark .blockDiag .items a{
+
+.dark .blockDiag .items a {
     background-color: #ffd0a636;
     color: var(--text-color2);
 }
-.blockDiag .items a:hover{
+
+.blockDiag .items a:hover {
     transform: scale(1.1);
     background-color: rgba(214, 148, 91, 0.279)
 }
 
-.umlContain{
+.umlContain {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
     margin: 10% 0;
 }
-.umlCard{
+
+.umlCard {
     height: 480px;
     width: 360px;
     display: flex;
@@ -138,34 +154,58 @@
     background-color: var(--bg-color1);
     border: 1px solid #c5b053;
     opacity: 0;
-    transition: all 1.3s;
+    transition: opacity 1.3s;
+    position: relative;
+    overflow: hidden;
 }
+.umlCard::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/images/bg-img.jpg);
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+    transition: all 10s;
+}
+.umlCard:hover::before{
+    transform: scale(1.5);
+}
+
 .dark .umlCard {
     background-color: #fbebde5c;
 }
-.umlCard.zoom-out{
+
+.umlCard.zoom-out {
     opacity: 1;
 }
-.umlCard h4{
+
+.umlCard h4 {
     font-size: 2em;
     margin: 20px;
     color: var(--text-color2);
     font-weight: 700;
     font-family: 'Cormorant', serif;
     text-transform: uppercase;
-    text-align: center ;
+    text-align: center;
 }
-.dark .umlCard h4{
+
+.dark .umlCard h4 {
     color: var(--dark-color1);
 }
-.umlCard p{
+
+.umlCard p {
     font-size: 1.2em;
     text-align: justify;
 }
-.dark .umlCard p{
-   color: var(--dark-color2);
+
+.dark .umlCard p {
+    color: var(--dark-color2);
 }
-.umlCard .plusInfos{
+
+.umlCard .plusInfos {
     margin: 20px 0;
     padding: 10px;
     width: 70%;
@@ -180,11 +220,13 @@
     transition: all 0.4s;
     cursor: pointer;
 }
-.dark .umlCard .plusInfos{
+
+.dark .umlCard .plusInfos {
     background-color: #ffd0a636;
     color: var(--dark-color1);
 }
-.umlCard .plusInfos:hover{
+
+.umlCard .plusInfos:hover {
     background-color: #7855364d;
     color: #FFF;
 }
