@@ -4,7 +4,7 @@ This project an catalog of UML diagram and Merise diagram.
 
 ## Link to view project
 
-[DiagramHub](https://catalog-lp.vercel.app/)
+[Link DiagramHub](https://catalog-lp.vercel.app/)
 
 [Ludoph](https://github.com/Ludoph)
 
