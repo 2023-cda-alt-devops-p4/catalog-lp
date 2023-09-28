@@ -55,15 +55,23 @@
     z-index: 55;
 }
 .icon-btn-menu{
-    animation: animationRotate 0.5s;
+    animation: animationRotate1 0.5s;
 
 }
-@keyframes animationRotate {
+@keyframes animationRotate1 {
     0%{
         transform: rotate(0deg);
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes animationRotate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }
 
@@ -90,7 +98,7 @@
 }
 .NavbarItems .dark-mode .icon-dark-mode{
     transition: all 0.5s;
-    animation: animationRotate 0.5s;
+    animation: animationRotate2 0.5s;
 }
 .NavbarItems .dark-mode .icon-dark-mode:hover{
     transform: scale(1.2);
