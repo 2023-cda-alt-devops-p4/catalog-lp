@@ -11,7 +11,7 @@ function MainUml() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
   const [zoomOut, setZoomOut] = useState(false);
-  const { theme, HandleTheme } = useContext<IThemeContext>(ThemeContext);
+  const { theme } = useContext<IThemeContext>(ThemeContext);
 
   const diagrammesStructure = UMLData.filter(
     (item) => item.categorie === "diagramme de structure"
@@ -92,7 +92,7 @@ function MainUml() {
   }, []);
 
   return (
-    <div className="UmlMain">
+    <div className={`UmlMain ${theme === "dark" && "dark"}`}>
       <div className="searchContain">
         <input
           type="text"
