@@ -55,12 +55,12 @@ function Home() {
             </p>
           </div>
           <hr />
+          <h1 className="title">Merise</h1>
           <div className="text-merise-home">
-            <h1 className="title">Merise</h1>
             <p>
               Explorez Merise, une méthodologie de{" "}
               <span>gestion de projet</span> informatique qui vous guide dans la
-              <span>conception</span> des systèmes d'information. Découvrez
+              <span> conception</span> des systèmes d'information. Découvrez
               comment élaborer des modèles conceptuels, logiques et physiques
               pour planifier et développer des bases de données et des
               applications.
