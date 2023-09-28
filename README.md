@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Diagram Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project an catalog of UML diagram and Merise diagram.
 
-## Available Scripts
+## Link to view project
 
-In the project directory, you can run:
+[DiagramHub](https://catalog-lp.vercel.app/)
 
-### `npm start`
+[Ludoph](https://github.com/Ludoph)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Context of the project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+“I will soon start my first mission as lead developer :) A big project will be implemented with my new team.
 
-### `npm test`
+​The design phase will be essential if I want everything to go smoothly!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+​I therefore need to have a centralized resource with an overview of all UML diagrams and all those that belong to the MERISE method. I need a method to follow for each of these diagrams, especially for the most important ones which I will have to create very quickly.
 
-### `npm run build`
+​As we are sometimes on the move, this support must be available online on mobile, tablet and PC. "
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+​It’s up to you 😉
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+" Je vais bientôt commencer ma première mission en tant que lead developer 🙂. Un gros projet va se mettre en place avec ma nouvelle équipe.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+​La phase de conception sera primordiale si je veux que tout se passe comme sur des roulettes!
 
-### `npm run eject`
+​J'ai donc besoin d'avoir une ressource centralisée avec une vision d'ensemble de tous les diagrammes UML et de tous ceux qui appartiennent à la méthode MERISE. Il me faut une méthode à suivre pour chacun de ces schémas, surtout pour les plus importants que j'aurai à créer très vite.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+​Etant parfois en déplacement, ce support doit être consultable en ligne aussi bien sur mobile que sur tablette et PC. "
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+​A vous de jouer 😉
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Teaching methods
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Structure
 
-## Learn More
+Vous devez produire votre "catalogue" avec :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+une page d'accueil
+les diagrammes UML
+les diagrammes Merise
+la navigation principale
+Vous pouvez le faire avec plusieurs pages ou en one page. Mettez en évidence les "diagrammes indispensables".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Tech
+
+Vous pouvez utiliser votre framework JS front préféré si vous souhaitez créer une SPA (Single Page Application) 😉
+Pas de framework CSS autorisé ! -> Bootstrap, Bulma, Tailwind, ..., c'est non.
+
+#### Conception
+
+Vous devez :
+
+avoir une version optimisée pour mobile en adoptant le concept Mobile First
+faire usage des media queries pour la version tablette et pc
+ajouter des animations, des popup, une version contrastée, etc. en vous aidant du CSS / JavaScript
+le mettre en ligne sur un service de déploiement au push, comme GitHub Pages / Netlify / Vercel
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Authors
+
+Contributors names and contact info
+
+Ludovic Phounphonh
