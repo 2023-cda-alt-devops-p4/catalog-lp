@@ -18,7 +18,6 @@ export const UMLData = [
   {
     id: 1,
     title: "Diagramme de Classe",
-    url: "#",
     image: uml1,
     categorie: "diagramme de structure",
     description:
@@ -27,7 +26,6 @@ export const UMLData = [
   {
     id: 2,
     title: "Diagramme d'Objet",
-    url: "#",
     image: uml2,
     categorie: "diagramme de structure",
     description:
@@ -36,7 +34,6 @@ export const UMLData = [
   {
     id: 3,
     title: "Diagramme de Composants",
-    url: "#",
     image: uml3,
     categorie: "diagramme de structure",
     description:
@@ -45,7 +42,6 @@ export const UMLData = [
   {
     id: 4,
     title: "Diagramme de Package",
-    url: "#",
     image: uml4,
     categorie: "diagramme de structure",
     description:
@@ -54,7 +50,6 @@ export const UMLData = [
   {
     id: 5,
     title: "Diagramme de Déploiement",
-    url: "#",
     image: uml5,
     categorie: "diagramme de structure",
     description:
@@ -63,7 +58,6 @@ export const UMLData = [
   {
     id: 6,
     title: "Diagramme de Vue d'Ensemble",
-    url: "#",
     image: uml6,
     categorie: "diagramme de structure",
     description:
@@ -72,7 +66,6 @@ export const UMLData = [
   {
     id: 7,
     title: "Diagramme de Cas d'Utilisation",
-    url: "#",
     image: uml7,
     categorie: "diagramme de comportement",
     description:
@@ -81,7 +74,6 @@ export const UMLData = [
   {
     id: 8,
     title: "Diagramme de Séquence",
-    url: "#",
     image: uml8,
     categorie: "diagramme de comportement",
     description:
@@ -90,7 +82,6 @@ export const UMLData = [
   {
     id: 9,
     title: "Diagramme de Collaboration",
-    url: "#",
     image: uml9,
     categorie: "diagramme de comportement",
     description:
@@ -99,7 +90,6 @@ export const UMLData = [
   {
     id: 10,
     title: "Diagramme d'Etat",
-    url: "#",
     image: uml10,
     categorie: "diagramme de comportement",
     description:
@@ -108,7 +98,6 @@ export const UMLData = [
   {
     id: 11,
     title: "Diagramme d'Activité",
-    url: "#",
     image: uml11,
     categorie: "diagramme de comportement",
     description:
@@ -117,7 +106,6 @@ export const UMLData = [
   {
     id: 12,
     title: "Diagramme de Machine à Etats",
-    url: "#",
     image: uml12,
     categorie: "diagramme de comportement",
     description:
@@ -126,7 +114,6 @@ export const UMLData = [
   {
     id: 13,
     title: "Diagramme de Communication",
-    url: "#",
     image: uml13,
     categorie: "diagramme de comportement",
     description:
@@ -135,7 +122,6 @@ export const UMLData = [
   {
     id: 14,
     title: "Diagramme de Temps",
-    url: "#",
     image: uml14,
     categorie: "diagramme de comportement",
     description:
@@ -144,7 +130,6 @@ export const UMLData = [
   {
     id: 15,
     title: "Diagramme d'Intéraction",
-    url: "#",
     image: uml15,
     categorie: "diagramme de comportement",
     description:

@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { MeriseData } from "./data/MeriseData";
+import { TiDelete } from "react-icons/ti";
 import Modal from "./Modal";
 import "./css/UmlStyle.css";
+import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
 function MainUml() {
   const [search, setSearch] = useState("");
@@ -9,6 +11,7 @@ function MainUml() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
   const [zoomOut, setZoomOut] = useState(false);
+  const { theme } = useContext<IThemeContext>(ThemeContext);
 
   const schemaConcept = MeriseData.filter(
     (item) => item.categorie === "schemas conceptuels"
@@ -68,9 +71,13 @@ function MainUml() {
     );
   };
   const selectedItemsList = selectedItemTitles.map((title, index) => (
-    <div key={index} className="selected-item">
+    <div
+      key={index}
+      className="selected-item"
+      onClick={() => removeSelectedItem(title)}
+    >
       {title}
-      <button onClick={() => removeSelectedItem(title)}>©</button>
+      <TiDelete className="icons-delete" />
     </div>
   ));
 
@@ -89,7 +96,7 @@ function MainUml() {
   }, []);
 
   return (
-    <div className="UmlMain">
+    <div className={`UmlMain ${theme === "dark" && "dark"}`}>
       <div className="searchContain">
         <div className="selectedItemsContainer">
           <p>{selectedItemsList}</p>
