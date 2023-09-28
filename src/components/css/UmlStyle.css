@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 40px;
 }
 
 .UmlMain .searchContain{
@@ -16,7 +17,7 @@
     padding: 10px 20px ;
     align-self: flex-start;
     border: none;
-    border-bottom: 1px solid #00771A;
+    border-bottom: 1px solid var(--text-color1);
     background-color: transparent;
     margin: 20px 0;
     width: 100%;
@@ -25,7 +26,7 @@
     font-family: var(--font-title);
     font-size: 1.4em;
 }
-.UmlMain input.dark{
+.UmlMain.dark input{
     color: var(--dark-color1);
 }
 
@@ -40,7 +41,7 @@
     font-size: 0.8em;
     margin: 0 4px 6px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #00430e;
+    color: var(--text-color2);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -48,11 +49,14 @@
     cursor: pointer;
     transition: all 0.4s;
 }
-.selected-item.dark{
-    background-color: var(--bg-color2);
+.dark .selected-item{
+    color: var(--text-color1);
+}
+.dark .selected-item{
+    background-color: #fffaf6e4;
 }
 .selected-item:hover{
-    color: #00430f65;
+    color: #43390065;
 }
 .selected-item .icons-delete{
     margin: 0 6px;
@@ -60,7 +64,7 @@
     align-items: center;
     background-color: transparent;
     border: none;
-    color: #00430e;
+    color: var(--text-color1);
 }
 .UmlMain .searchContain .selectedItemsContainer p{
     display: flex;
@@ -105,8 +109,9 @@
     font-weight: 700;
     transition: all 0.4s;
 }
-.blockDiag .items a.dark{
-    background-color: var(--bg-color2);
+.dark .blockDiag .items a{
+    background-color: #ffd0a636;
+    color: var(--text-color2);
 }
 .blockDiag .items a:hover{
     transform: scale(1.1);
@@ -135,8 +140,8 @@
     opacity: 0;
     transition: all 1.3s;
 }
-.umlCard.dark {
-    background-color: var(--bg-color2);
+.dark .umlCard {
+    background-color: #fbebde5c;
 }
 .umlCard.zoom-out{
     opacity: 1;
@@ -150,18 +155,22 @@
     text-transform: uppercase;
     text-align: center ;
 }
-.umlCard h4.dark{
-    color: var(--dark-color2);
+.dark .umlCard h4{
+    color: var(--dark-color1);
 }
 .umlCard p{
     font-size: 1.2em;
     text-align: justify;
+}
+.dark .umlCard p{
+   color: var(--dark-color2);
 }
 .umlCard .plusInfos{
     margin: 20px 0;
     padding: 10px;
     width: 70%;
     font-family: 'Cormorant Unicase', serif;
+    letter-spacing: -2px;
     font-size: 1.6em;
     background-color: var(--bg-color1);
     border: none;
@@ -171,9 +180,9 @@
     transition: all 0.4s;
     cursor: pointer;
 }
-.umlCard .plusInfos.dark{
-    background-color: var(--bg-color2);
-    color: var(--dark-color2);
+.dark .umlCard .plusInfos{
+    background-color: #ffd0a636;
+    color: var(--dark-color1);
 }
 .umlCard .plusInfos:hover{
     background-color: #7855364d;

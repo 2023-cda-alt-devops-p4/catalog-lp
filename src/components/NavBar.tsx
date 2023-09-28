@@ -70,12 +70,10 @@ function NavBar() {
         {isLight ? (
           <RiMoonFill color="#844d1c" className="icon-dark-mode" />
         ) : (
-          <RiSunLine color="#fff0e3" className="icon-dark-mode" />
+          <RiSunLine color="#EEBA01" className="icon-dark-mode" />
         )}
 
-        <p className={isLight ? "" : "dark"}>
-          {isLight ? "Dark Mode" : "Light Mode"}
-        </p>
+        <p className={isLight ? "" : "dark"}>{isLight ? "Dark" : "Light"}</p>
       </button>
     </nav>
   );

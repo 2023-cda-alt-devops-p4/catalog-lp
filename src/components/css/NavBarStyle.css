@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    padding: 20px 40px;
+    padding: 20px 60px;
     opacity: 1;
     transition: all 1.4s;
     height: 100px;
@@ -69,7 +69,7 @@
     transform: translateX(100%);
     transition: all 0.5s;
 }
-.NavbarItems .link-menu-burger.dark{
+.NavbarItems.dark .link-menu-burger{
     background-color: var(--bg-color2);
 }
 .NavbarItems .link-menu-burger.active{
@@ -86,12 +86,13 @@
     color: var(--text-color1);
 }
 .NavbarItems .dark-mode p.dark{
-    color: #fff0e3;
+    color: #EEBA01;
 }
 @media(max-width: 820px) {
     .NavbarItems{
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding: 20px 40px;
     }
     .NavbarItems .link-page{
         display: none;
