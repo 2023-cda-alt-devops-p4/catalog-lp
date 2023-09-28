@@ -54,6 +54,27 @@
     position: relative;
     z-index: 55;
 }
+.icon-btn-menu{
+    animation: animationRotate1 0.5s;
+
+}
+@keyframes animationRotate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animationRotate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
 .NavbarItems .link-menu-burger{
     display: flex;
     flex-direction: column;
@@ -70,13 +91,14 @@
     transition: all 0.5s;
 }
 .NavbarItems.dark .link-menu-burger{
-    background-color: var(--bg-color2);
+    background-color: #131313;
 }
 .NavbarItems .link-menu-burger.active{
     transform: translateX(0);
 }
 .NavbarItems .dark-mode .icon-dark-mode{
     transition: all 0.5s;
+    animation: animationRotate2 0.5s;
 }
 .NavbarItems .dark-mode .icon-dark-mode:hover{
     transform: scale(1.2);
@@ -106,7 +128,7 @@
     }
     .NavbarItems .btn-menu .icon-btn-menu,
     .NavbarItems .icon-dark-mode{
-        height: 20px;
-        width: 20px;
+        height: 24px;
+        width: 24px;
     }
 }

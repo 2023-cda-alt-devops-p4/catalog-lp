@@ -29,7 +29,7 @@
     font-weight: 900;
     color: var(--text-color1);
 }
-.home-page.dark .title h1 span{
+.dark .title h1 span{
     color: var(--dark-color1);
 }
 .home-page .home-page-contain{
@@ -45,8 +45,8 @@
     color: #000;
 }
 .home-page.dark .home-page-contain p {
-    color: #fff;
-    font-weight: 700;
+    color: var(--dark-color1);
+    font-weight: 500;
 
 }
 .home-page .home-page-contain .section-uml-merise{

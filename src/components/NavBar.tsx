@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoLight from "../assets/images/logo.png";
 import LogoDark from "../assets/images/logoo.png";
-import { RiMoonFill, RiMenu3Fill, RiSunLine } from "react-icons/ri";
+import { RiMoonFill, RiMenuFill, RiSunLine, RiCloseFill } from "react-icons/ri";
 import "./css/NavBarStyle.css";
 import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
@@ -38,10 +38,16 @@ function NavBar() {
       }`}
     >
       <button className="btn-menu" onClick={handleShowLink}>
-        {isLight ? (
-          <RiMenu3Fill color="#000" className="icon-btn-menu" />
+        {showLink ? (
+          <RiCloseFill
+            color={isLight ? "#844d1c" : "#EEBA01"}
+            className="icon-btn-menu"
+          />
         ) : (
-          <RiMenu3Fill color="#FFF" className="icon-btn-menu" />
+          <RiMenuFill
+            color={isLight ? "#844d1c" : "#EEBA01"}
+            className="icon-btn-menu"
+          />
         )}
       </button>
       <Link to="/">
