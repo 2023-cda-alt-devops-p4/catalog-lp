@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 40px;
 }
 
 .UmlMain .searchContain{
@@ -16,14 +17,17 @@
     padding: 10px 20px ;
     align-self: flex-start;
     border: none;
-    border-bottom: 1px solid #00771A;
+    border-bottom: 1px solid var(--text-color1);
     background-color: transparent;
     margin: 20px 0;
     width: 100%;
     outline: none;
-    color: #844d1c;
-    font-family: 'Cormorant Unicase', serif;
+    color: var(--text-color1);
+    font-family: var(--font-title);
     font-size: 1.4em;
+}
+.UmlMain.dark input{
+    color: var(--dark-color1);
 }
 
 .UmlMain .searchContain .selectedItemsContainer {
@@ -32,12 +36,12 @@
     align-items: center;
 }
 .selected-item{
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     padding: 10px;
     font-size: 0.8em;
     margin: 0 4px 6px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #00430e;
+    color: var(--text-color2);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -45,8 +49,14 @@
     cursor: pointer;
     transition: all 0.4s;
 }
+.dark .selected-item{
+    color: var(--text-color1);
+}
+.dark .selected-item{
+    background-color: #fffaf6e4;
+}
 .selected-item:hover{
-    color: #00430f65;
+    color: #43390065;
 }
 .selected-item .icons-delete{
     margin: 0 6px;
@@ -54,7 +64,7 @@
     align-items: center;
     background-color: transparent;
     border: none;
-    color: #00430e;
+    color: var(--text-color1);
 }
 .UmlMain .searchContain .selectedItemsContainer p{
     display: flex;
@@ -72,14 +82,16 @@
     padding: 10px;
 }
 .blockDiag h3{
-    color: #D6955B;
+    color: var(--text-color2);
     font-family: 'Cormorant', serif;
     text-transform: capitalize;
     font-size: 2em;
     font-weight: 700;
     width: 100%;
     font-weight: 700;
-    font-weight: 900;
+}
+.blockDiag h3.dark{
+    color: var(--dark-color2);
 }
 .blockDiag .items{
     margin-top: 20px;
@@ -91,18 +103,20 @@
     padding: 10px;
     font-size: 0.8em;
     margin: 0 10px 4px 0px;
-    background-color: #FFF;
+    background-color: var(--bg-color1);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #844d1c;
     font-weight: 700;
     transition: all 0.4s;
 }
+.dark .blockDiag .items a{
+    background-color: #ffd0a636;
+    color: var(--text-color2);
+}
 .blockDiag .items a:hover{
     transform: scale(1.1);
     background-color: rgba(214, 148, 91, 0.279)
 }
-
-
 
 .umlContain{
     display: flex;
@@ -121,10 +135,13 @@
     font-family: 'Hind Madurai', sans-serif;
     margin: 60px 0;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     border: 1px solid #c5b053;
     opacity: 0;
     transition: all 1.3s;
+}
+.dark .umlCard {
+    background-color: #fbebde5c;
 }
 .umlCard.zoom-out{
     opacity: 1;
@@ -132,29 +149,40 @@
 .umlCard h4{
     font-size: 2em;
     margin: 20px;
-    color: #D6955B;
+    color: var(--text-color2);
     font-weight: 700;
     font-family: 'Cormorant', serif;
     text-transform: uppercase;
     text-align: center ;
 }
+.dark .umlCard h4{
+    color: var(--dark-color1);
+}
 .umlCard p{
     font-size: 1.2em;
     text-align: justify;
+}
+.dark .umlCard p{
+   color: var(--dark-color2);
 }
 .umlCard .plusInfos{
     margin: 20px 0;
     padding: 10px;
     width: 70%;
     font-family: 'Cormorant Unicase', serif;
+    letter-spacing: -2px;
     font-size: 1.6em;
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     border: none;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #D6955B;
+    color: var(--text-color2);
     font-weight: 700;
     transition: all 0.4s;
     cursor: pointer;
+}
+.dark .umlCard .plusInfos{
+    background-color: #ffd0a636;
+    color: var(--dark-color1);
 }
 .umlCard .plusInfos:hover{
     background-color: #7855364d;

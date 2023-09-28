@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { UMLData } from "./data/UMLData";
 import { TiDelete } from "react-icons/ti";
 import Modal from "./Modal";
 import "./css/UmlStyle.css";
+import { IThemeContext, ThemeContext } from "../context/ThemeProvider";
 
 function MainUml() {
   const [search, setSearch] = useState("");
@@ -10,6 +11,7 @@ function MainUml() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>(null);
   const [zoomOut, setZoomOut] = useState(false);
+  const { theme, HandleTheme } = useContext<IThemeContext>(ThemeContext);
 
   const diagrammesStructure = UMLData.filter(
     (item) => item.categorie === "diagramme de structure"
@@ -151,7 +153,7 @@ function MainUml() {
         </div>
       </div>
 
-      <div className="umlContain">
+      <div className={`umlContain ${theme === "dark" && "dark"}`}>
         {selectedItemTitles.length > 0 ? selectedUmlItems : allUmlItems}
       </div>
 

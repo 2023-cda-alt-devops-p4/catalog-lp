@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root{
-  background-color: #ffffff;
+  --bg-color1: #ffffff;
+  --text-color1: #844d1c;
+  --text-color2: #D6955B;
+  --border-gold: #c5b053;
+  --font-title: 'Cormorant Unicase', serif;
+  --font-subtitle: 'Cormorant', serif;
+  --font-text: 'Cormorant', serif;
+  --font-family: 'Hind Madurai', sans-serif;
+
+  --bg-color2: #1d1d1d;
+  --dark-color1: #EEBA01;
+  --dark-color2: #fff;
 }
 
 body {

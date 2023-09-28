@@ -1,16 +1,10 @@
-*,
-::after,
-::before{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-    display: none;
-}
+
 .App {
-    margin: 0 5%;
+    background-color: var(--bg-color1);
+    min-height: 100vh;
+    width: auto;
+    transition: all 1s;
+}
+.App.dark{
+    background-color: var(--bg-color2);
 }
