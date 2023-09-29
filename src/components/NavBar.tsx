@@ -33,7 +33,7 @@ function NavBar() {
 
   return (
     <nav
-      className={`NavbarItems ${zoomOut && "zoom-out"} ${
+      className={`navbarItems ${zoomOut && "zoom-out"} ${
         theme === "dark" && "dark"
       }`}
     >
