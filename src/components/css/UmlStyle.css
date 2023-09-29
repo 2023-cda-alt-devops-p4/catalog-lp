@@ -169,8 +169,10 @@
     left: 0px;
     opacity: 0.15;
     transition: all 10s;
+    pointer-events: none;
 }
-.umlCard:hover::before{
+.umlCard:hover::before {
+    pointer-events: none;
     transform: scale(1.5);
 }
 
