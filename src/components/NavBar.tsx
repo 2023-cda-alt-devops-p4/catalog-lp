@@ -37,7 +37,7 @@ function NavBar() {
         theme === "dark" && "dark"
       }`}
     >
-      <button className="btn-menu" onClick={handleShowLink}>
+      <button id="btn-menu" className="btn-menu" onClick={handleShowLink}>
         {showLink ? (
           <RiCloseFill
             color={isLight ? "#844d1c" : "#EEBA01"}
@@ -72,7 +72,7 @@ function NavBar() {
           Merise
         </Link>
       </div>
-      <button className="dark-mode" onClick={HandleTheme}>
+      <button id="dark-mode" className="dark-mode" onClick={HandleTheme}>
         {isLight ? (
           <RiMoonFill color="#844d1c" className="icon-dark-mode" />
         ) : (
