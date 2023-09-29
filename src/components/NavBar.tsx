@@ -51,7 +51,12 @@ function NavBar() {
         )}
       </button>
       <Link to="/">
-        <img src={theme === "light" ? LogoLight : LogoDark} alt="logo" />
+        <img
+          src={theme === "light" ? LogoLight : LogoDark}
+          alt="logo"
+          width="100px"
+          height=""
+        />
       </Link>
       <div className="link-page">
         <Link to="/uml">UML</Link>

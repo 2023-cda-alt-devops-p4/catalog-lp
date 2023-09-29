@@ -25,7 +25,12 @@ function Home() {
   return (
     <div className={`home-page ${theme === "dark" && "dark"}`}>
       <div className="title">
-        <img src={theme === "light" ? Logo2Light : Logo2Dark} alt="logo" />
+        <img
+          src={theme === "light" ? Logo2Light : Logo2Dark}
+          alt="logo"
+          width=""
+          height=""
+        />
         <h1>
           Bienvenue sur Diagram Hub! Des explications rapides et claires sur
           deux méthodologies essentielles : <span>UML</span> et{" "}
