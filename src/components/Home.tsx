@@ -78,30 +78,29 @@ function Home() {
               mais pour les systèmes d'information. Elle vous aide à :
               <br />
               <br />
-              <ul>
-                <li>
-                  1 - Identifier ce que votre système doit faire (les besoins)
-                  en interrogeant les utilisateurs.
-                </li>
-                <li>
-                  2 - Organiser ces besoins en modules ou en parties du système
-                  (comme les pièces d'une maison).
-                </li>
-                <li>
-                  3 - Définir comment ces modules vont communiquer entre eux
-                  (les flux d'informations).{" "}
-                </li>
-                <li>
-                  4 - Créer des schémas et des diagrammes pour représenter ces
-                  idées de manière claire (comme un plan de maison).{" "}
-                </li>
-                <li>
-                  5 - Enfin, une fois que tout est bien compris et organisé,
-                  vous pouvez commencer à construire votre système
-                  d'information.
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                1 - Identifier ce que votre système doit faire (les besoins) en
+                interrogeant les utilisateurs.
+              </li>
+              <li>
+                2 - Organiser ces besoins en modules ou en parties du système
+                (comme les pièces d'une maison).
+              </li>
+              <li>
+                3 - Définir comment ces modules vont communiquer entre eux (les
+                flux d'informations).{" "}
+              </li>
+              <li>
+                4 - Créer des schémas et des diagrammes pour représenter ces
+                idées de manière claire (comme un plan de maison).{" "}
+              </li>
+              <li>
+                5 - Enfin, une fois que tout est bien compris et organisé, vous
+                pouvez commencer à construire votre système d'information.
+              </li>
+            </ul>
           </div>
         </div>
         <hr />

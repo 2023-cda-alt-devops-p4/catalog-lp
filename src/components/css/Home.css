@@ -11,6 +11,7 @@
 }
 .home-page .title img{
     width: 60vw;
+    height: auto;
     margin-bottom: 10%;
 }
 .home-page .title h1{
@@ -70,6 +71,12 @@
 .home-page .home-page-contain .section-uml-merise .text-merise-home{
     text-align: left;
     max-width: 80%;
+}
+.text-merise-home ul{
+    color: var(--text-color1);
+}
+.dark .text-merise-home ul{
+    color: var(--dark-color1);
 }
 .home-page .home-page-contain .text-bot{
     text-align: center;

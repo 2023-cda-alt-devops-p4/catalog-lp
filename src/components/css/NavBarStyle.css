@@ -34,7 +34,7 @@
     transform: scale(1.1);
 }
 .NavbarItems a img {
-    max-width: 100px;
+   width: 100px;
 }
 .NavbarItems .dark-mode{
     font-family: var(--font-title);
