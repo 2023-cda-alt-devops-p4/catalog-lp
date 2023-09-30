@@ -39,7 +39,6 @@ function MainUml() {
   };
 
   const allUmlItems = UMLData.map((item, index) => (
-    // <div className="umlCard" key={index}>
     <div className={`umlCard ${zoomOut ? "zoom-out" : ""}`} key={index}>
       <h4>{item.title}</h4>
       <p>{item.description}</p>

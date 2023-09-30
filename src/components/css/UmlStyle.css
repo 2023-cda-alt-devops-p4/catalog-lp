@@ -158,7 +158,7 @@
     position: relative;
     overflow: hidden;
 }
-.umlCard::before{
+/* .umlCard::before{
     content: "";
     position: absolute;
     background-image: url(../../assets/images/bg-img.jpg);
@@ -174,10 +174,10 @@
 .umlCard:hover::before {
     pointer-events: none;
     transform: scale(1.5);
-}
+} */
 
 .dark .umlCard {
-    background-color: #fbebde5c;
+    background-color: #fbebde34;
 }
 
 .umlCard.zoom-out {
