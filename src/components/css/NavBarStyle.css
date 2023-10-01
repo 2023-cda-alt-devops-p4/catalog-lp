@@ -35,6 +35,7 @@
 }
 .NavbarItems a img {
    width: 100px;
+   height: auto;
 }
 .NavbarItems .dark-mode{
     font-family: var(--font-title);
